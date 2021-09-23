@@ -1,0 +1,37 @@
+class Rempah {
+    /** property */
+    String nama = "";
+    int umur = 0;
+    int berat = 0;
+
+    /** construktor */
+    Rempah (this.nama, this.umur, this.berat);
+
+    /** procedure */
+    void siram() {
+        print('$nama di siram air dalam sehari');
+        this.berat += 1; //this.berat = this.berat + 1;
+    }
+
+/** function */
+  String menanen() {
+    return 'Horee Panen!!!';
+    }
+}
+
+main(List <String> args) {
+  Rempah Kunyit = new Rempah ("Kunyit", 1, 2);
+for (var i=0; i<5; i++) {
+  Kunyit.siram();
+}
+  print(' Berat ' + Kunyit.nama + ' sekarang adalah ' + Kunyit.berat.toString() + " ons");
+  print(Kunyit.menanen() + " " + Kunyit.nama);
+
+
+Rempah Jahe= new Rempah ("Jahe", 1, 2);
+for (var i=0; i<6; i++) {
+  Jahe.siram();
+}
+  print(' Berat ' + Jahe.nama + ' sekarang adalah ' + Jahe.berat.toString() + " ons");
+  print(Jahe.menanen() + " " + Jahe.nama);
+}
